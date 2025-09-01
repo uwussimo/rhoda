@@ -169,7 +169,7 @@ export function Hero() {
               variant="label"
               className="text-black/60 font-semibold mb-4 block tracking-wide uppercase"
             >
-              Introducing Rhoda OS
+              From Rhoda Labs
             </Typography>
             <h1 className="text-display-large text-black mb-8 leading-[0.9] font-bold tracking-tight">
               The first{" "}

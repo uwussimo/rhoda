@@ -12,8 +12,8 @@ const links = [
 ];
 
 const social = [
-  { name: "Twitter", href: "https://twitter.com/rhodaos" },
-  { name: "GitHub", href: "https://github.com/rhodaos" },
+  { name: "GitHub", href: "https://github.com/rhoda-labs" },
+  { name: "Twitter", href: "https://twitter.com/rhodalabs" },
 ];
 
 export function Footer() {
@@ -34,66 +34,57 @@ export function Footer() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="flex flex-col md:flex-row justify-between items-center gap-8"
+          className="space-y-12"
         >
-          {/* Brand */}
-          <div className="flex items-center space-x-12">
-            <Typography
-              variant="subhead"
-              className="text-black font-bold text-xl"
-            >
-              Rhoda
-            </Typography>
+          {/* Main footer content */}
+          <div className="flex flex-col md:flex-row justify-between items-start gap-12">
+            {/* Brand & Company Info */}
+            <div className="space-y-6">
+              <div className="flex items-center space-x-12">
+                <Typography
+                  variant="subhead"
+                  className="text-black font-bold text-xl"
+                >
+                  Rhoda
+                </Typography>
 
-            <Typography
-              variant="body"
-              className="text-black/60 hidden md:block"
-            >
-              The first AI-native operating system
-            </Typography>
+                <Typography
+                  variant="body"
+                  className="text-black/60 hidden sm:block"
+                >
+                  The first AI-native operating system
+                </Typography>
+              </div>
+            </div>
+
+            {/* Links */}
+            <div className="flex items-center space-x-8">
+              {links.map((item) => (
+                <a
+                  key={item.name}
+                  href={`#${item.href}`}
+                  onClick={(e) => handleClick(e, item.href)}
+                  className="text-black/60 hover:text-black transition-colors duration-200 text-sm font-medium"
+                >
+                  {item.name}
+                </a>
+              ))}
+
+              <div className="w-px h-4 bg-black/20"></div>
+
+              {social.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black/60 hover:text-black transition-colors duration-200 text-sm font-medium"
+                >
+                  {item.name}
+                </a>
+              ))}
+            </div>
           </div>
-
-          {/* Links */}
-          <div className="flex items-center space-x-8">
-            {links.map((item) => (
-              <a
-                key={item.name}
-                href={`#${item.href}`}
-                onClick={(e) => handleClick(e, item.href)}
-                className="text-black/60 hover:text-black transition-colors duration-200 text-sm font-medium"
-              >
-                {item.name}
-              </a>
-            ))}
-
-            <div className="w-px h-4 bg-black/20"></div>
-
-            {social.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-black/60 hover:text-black transition-colors duration-200 text-sm font-medium"
-              >
-                {item.name}
-              </a>
-            ))}
-          </div>
-        </motion.div>
-
-        {/* Bottom line */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="mt-8 pt-8 border-t border-black/5 text-center"
-        >
-          <Typography variant="body-small" className="text-black/40">
-            © {new Date().getFullYear()} Rhoda. Building the future of
-            human-computer interaction.
-          </Typography>
         </motion.div>
       </Container>
     </footer>

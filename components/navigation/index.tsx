@@ -108,7 +108,7 @@ export function Navigation() {
             <motion.a
               href="#"
               className="flex items-center"
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.02 }}
               transition={{ type: "spring", stiffness: 400, damping: 25 }}
             >
               <Typography
@@ -157,10 +157,6 @@ export function Navigation() {
                 }}
               >
                 <motion.div
-                  whileHover={{
-                    scale: 1.05,
-                    boxShadow: "0 10px 30px rgba(0,0,0,0.3)",
-                  }}
                   whileTap={{ scale: 0.95 }}
                   transition={{ type: "spring", stiffness: 400, damping: 25 }}
                 >
