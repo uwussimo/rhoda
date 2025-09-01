@@ -7,10 +7,10 @@ import { FloatingOrbs } from "@/components/ui/floating-orbs";
 
 // Feature demonstration components
 const VoiceInterfaceDemo = () => (
-  <div className="relative max-w-4xl mx-auto">
-    <div className="aspect-[16/10] rounded-2xl overflow-hidden bg-gradient-to-br from-white to-gray-50 border border-black/10 shadow-xl">
+  <div className="relative max-w-4xl mx-auto px-4">
+    <div className="aspect-[4/3] sm:aspect-[16/10] rounded-xl sm:rounded-2xl overflow-hidden bg-gradient-to-br from-white to-gray-50 border border-black/10 shadow-xl">
       {/* Voice interaction */}
-      <div className="p-8 space-y-6">
+      <div className="p-4 sm:p-8 space-y-4 sm:space-y-6">
         <div className="flex items-start space-x-4">
           <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
             <div className="w-4 h-4 bg-blue-500 rounded-full"></div>
@@ -271,7 +271,10 @@ const Feature = ({
 
 export function FeaturesSection() {
   return (
-    <section id="features" className="relative py-32 bg-white overflow-hidden">
+    <section
+      id="features"
+      className="relative py-20 sm:py-32 bg-white overflow-hidden"
+    >
       {/* Floating orbs background */}
       <FloatingOrbs className="opacity-20" />
 

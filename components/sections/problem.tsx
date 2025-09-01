@@ -27,92 +27,98 @@ const stagger = {
 
 // Problem visualization component
 const ProblemDemo = () => (
-  <div className="relative max-w-5xl mx-auto">
-    <div className="relative aspect-[16/9] rounded-2xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 border border-black/10 shadow-xl">
+  <div className="relative max-w-5xl mx-auto px-4">
+    <div className="relative aspect-[4/3] sm:aspect-[16/9] rounded-xl sm:rounded-2xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 border border-black/10 shadow-xl">
       {/* Traditional computing simulation */}
-      <div className="absolute inset-6">
-        <div className="grid grid-cols-4 gap-4 h-full">
+      <div className="absolute inset-3 sm:inset-6">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4 h-full">
           {/* Multiple disconnected apps */}
-          <div className="bg-white rounded-lg border border-black/10 p-4 shadow-sm">
-            <div className="flex items-center space-x-2 mb-3">
-              <div className="w-2 h-2 rounded-full bg-red-400"></div>
-              <div className="w-2 h-2 rounded-full bg-yellow-400"></div>
-              <div className="w-2 h-2 rounded-full bg-green-400"></div>
+          <div className="bg-white rounded-lg border border-black/10 p-2 sm:p-4 shadow-sm">
+            <div className="flex items-center space-x-1 sm:space-x-2 mb-2 sm:mb-3">
+              <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-red-400"></div>
+              <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-yellow-400"></div>
+              <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-green-400"></div>
             </div>
             <Typography
               variant="label"
-              className="text-black/40 text-xs mb-2 block"
+              className="text-black/40 text-xs mb-1 sm:mb-2 block"
             >
               Photo Manager
             </Typography>
             <div className="space-y-1">
-              <div className="w-full h-2 bg-black/5 rounded"></div>
-              <div className="w-3/4 h-2 bg-black/5 rounded"></div>
+              <div className="w-full h-1.5 sm:h-2 bg-black/5 rounded"></div>
+              <div className="w-3/4 h-1.5 sm:h-2 bg-black/5 rounded"></div>
             </div>
           </div>
 
-          <div className="bg-white rounded-lg border border-black/10 p-4 shadow-sm">
-            <div className="flex items-center space-x-2 mb-3">
-              <div className="w-2 h-2 rounded-full bg-red-400"></div>
-              <div className="w-2 h-2 rounded-full bg-yellow-400"></div>
-              <div className="w-2 h-2 rounded-full bg-green-400"></div>
+          <div className="bg-white rounded-lg border border-black/10 p-2 sm:p-4 shadow-sm">
+            <div className="flex items-center space-x-1 sm:space-x-2 mb-2 sm:mb-3">
+              <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-red-400"></div>
+              <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-yellow-400"></div>
+              <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-green-400"></div>
             </div>
             <Typography
               variant="label"
-              className="text-black/40 text-xs mb-2 block"
+              className="text-black/40 text-xs mb-1 sm:mb-2 block"
             >
               File Explorer
             </Typography>
             <div className="space-y-1">
-              <div className="w-full h-2 bg-black/5 rounded"></div>
-              <div className="w-2/3 h-2 bg-black/5 rounded"></div>
+              <div className="w-full h-1.5 sm:h-2 bg-black/5 rounded"></div>
+              <div className="w-2/3 h-1.5 sm:h-2 bg-black/5 rounded"></div>
             </div>
           </div>
 
-          <div className="bg-white rounded-lg border border-black/10 p-4 shadow-sm">
-            <div className="flex items-center space-x-2 mb-3">
-              <div className="w-2 h-2 rounded-full bg-red-400"></div>
-              <div className="w-2 h-2 rounded-full bg-yellow-400"></div>
-              <div className="w-2 h-2 rounded-full bg-green-400"></div>
+          <div className="bg-white rounded-lg border border-black/10 p-2 sm:p-4 shadow-sm">
+            <div className="flex items-center space-x-1 sm:space-x-2 mb-2 sm:mb-3">
+              <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-red-400"></div>
+              <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-yellow-400"></div>
+              <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-green-400"></div>
             </div>
             <Typography
               variant="label"
-              className="text-black/40 text-xs mb-2 block"
+              className="text-black/40 text-xs mb-1 sm:mb-2 block"
             >
               Calendar App
             </Typography>
             <div className="space-y-1">
-              <div className="w-full h-2 bg-black/5 rounded"></div>
-              <div className="w-1/2 h-2 bg-black/5 rounded"></div>
+              <div className="w-full h-1.5 sm:h-2 bg-black/5 rounded"></div>
+              <div className="w-1/2 h-1.5 sm:h-2 bg-black/5 rounded"></div>
             </div>
           </div>
 
-          <div className="bg-white rounded-lg border border-black/10 p-4 shadow-sm">
-            <div className="flex items-center space-x-2 mb-3">
-              <div className="w-2 h-2 rounded-full bg-red-400"></div>
-              <div className="w-2 h-2 rounded-full bg-yellow-400"></div>
-              <div className="w-2 h-2 rounded-full bg-green-400"></div>
+          <div className="bg-white rounded-lg border border-black/10 p-2 sm:p-4 shadow-sm">
+            <div className="flex items-center space-x-1 sm:space-x-2 mb-2 sm:mb-3">
+              <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-red-400"></div>
+              <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-yellow-400"></div>
+              <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-green-400"></div>
             </div>
             <Typography
               variant="label"
-              className="text-black/40 text-xs mb-2 block"
+              className="text-black/40 text-xs mb-1 sm:mb-2 block"
             >
               Notes App
             </Typography>
             <div className="space-y-1">
-              <div className="w-full h-2 bg-black/5 rounded"></div>
-              <div className="w-4/5 h-2 bg-black/5 rounded"></div>
+              <div className="w-full h-1.5 sm:h-2 bg-black/5 rounded"></div>
+              <div className="w-4/5 h-1.5 sm:h-2 bg-black/5 rounded"></div>
             </div>
           </div>
         </div>
 
         {/* User confusion */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="bg-white/95 backdrop-blur-sm rounded-xl p-6 border border-black/10 shadow-lg max-w-sm text-center">
-            <Typography variant="body" className="text-black/60 mb-2">
+        <div className="absolute inset-0 flex items-center justify-center p-4">
+          <div className="bg-white/95 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-black/10 shadow-lg max-w-xs sm:max-w-sm text-center">
+            <Typography
+              variant="body-small"
+              className="text-black/60 mb-1 sm:mb-2 text-sm"
+            >
               &ldquo;Which app do I need?&rdquo;
             </Typography>
-            <Typography variant="body-small" className="text-black/40">
+            <Typography
+              variant="body-small"
+              className="text-black/40 text-xs sm:text-sm"
+            >
               The user juggles between disconnected tools
             </Typography>
           </div>
@@ -136,7 +142,7 @@ export function ProblemSection() {
   );
 
   return (
-    <section className="relative py-32 bg-gray-50/30 overflow-hidden">
+    <section className="relative py-20 sm:py-32 bg-gray-50/30 overflow-hidden">
       {/* Floating orbs background with parallax */}
       <motion.div style={{ y: orbY, opacity: orbOpacity }}>
         <FloatingOrbs className="opacity-30" />

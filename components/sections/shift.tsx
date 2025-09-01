@@ -8,7 +8,7 @@ export function ShiftSection() {
   return (
     <section
       id="vision"
-      className="relative py-40 bg-gradient-to-b from-gray-50/40 to-white overflow-hidden"
+      className="relative py-20 sm:py-40 bg-gradient-to-b from-gray-50/40 to-white overflow-hidden"
     >
       {/* Floating orbs background */}
       <FloatingOrbs className="opacity-25" />

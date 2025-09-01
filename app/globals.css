@@ -135,3 +135,28 @@ html {
 .mobile-menu-open {
   overflow: hidden;
 }
+
+/* Mobile optimizations */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Improve mobile touch targets */
+  button {
+    min-height: 44px;
+  }
+
+  /* Better mobile typography */
+  h1,
+  h2,
+  h3 {
+    line-height: 1.1;
+  }
+
+  /* Prevent horizontal scroll */
+  body {
+    overflow-x: hidden;
+  }
+}

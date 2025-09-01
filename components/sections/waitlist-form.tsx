@@ -38,7 +38,10 @@ export function WaitlistForm() {
   };
 
   return (
-    <section id="waitlist" className="relative py-32 bg-white overflow-hidden">
+    <section
+      id="waitlist"
+      className="relative py-20 sm:py-32 bg-white overflow-hidden"
+    >
       {/* Floating orbs background */}
       <FloatingOrbs className="opacity-10" />
 
