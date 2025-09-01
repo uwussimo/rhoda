@@ -9,10 +9,6 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Email is required" }, { status: 400 });
     }
 
-    // TODO: Add your waitlist storage logic here
-    // Example: Store in database, send to email service, etc.
-    console.log("New waitlist signup:", email);
-
     // Track signup in PostHog
     if (process.env.NEXT_PUBLIC_POSTHOG_KEY) {
       const PostHog = (await import("posthog-js")).default;
